@@ -190,14 +190,14 @@ p {
     text-align: center;
 }
 
-.skillset {
+.skillsets {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
     gap: 25px;
 }
 
-.skillset>div {
+.skillsets>div {
     background-color: #F7F7F7;
     width: 150px;
     height: 100px;
@@ -211,13 +211,13 @@ p {
     align-items: center;
 }
 
-.skillset img {
+.skillsets img {
     width: 100%;
     aspect-ratio: 3/2;
     object-fit: contain;
 }
 
-.skillset>div:hover {
+.skillsets>div:hover {
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     transform: scale(1.1);
     /* Scale the div on hover */
