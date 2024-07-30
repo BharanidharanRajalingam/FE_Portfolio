@@ -41,13 +41,13 @@ p {
 /* Header */
 
 /* AboutUs */
-.aboutussec {
+.aboutussection {
     margin: 5% 0px;
     display: flex;
     align-items: center;
 }
 
-.aboutussec img {
+.aboutussection img {
     width: 100%;
     border-top-left-radius: 30px;
     border-bottom-right-radius: 30px;
@@ -55,13 +55,13 @@ p {
     border-top-right-radius: 5px;
 }
 
-.aboutussec h2,
-.aboutussec h4 {
+.aboutussection h2,
+.aboutussection h4 {
     margin-bottom: 5px;
     color: #B55755;
 }
 
-.aboutussec h6 {
+.aboutussection h6 {
     color: #65cccd;
     border-right: 1px solid #65cccd;
     /* Simulate cursor */
@@ -108,12 +108,12 @@ p {
     }
 }
 
-.aboutussec p {
+.aboutussection p {
     font-family: "Roboto", sans-serif;
     color: #444444;
 }
 
-.aboutussec a {
+.aboutussection a {
     text-decoration: none;
     color: #65cccd;
     font-size: 16px;
@@ -126,7 +126,7 @@ p {
     transition: transform 0.3s ease;
 }
 
-.aboutussec a::before {
+.aboutussection a::before {
     content: '';
     position: absolute;
     top: -1px;
@@ -171,11 +171,11 @@ p {
     }
 }
 
-.aboutussec a:hover {
+.aboutussection a:hover {
     transform: scale(1.1);
 }
 
-.aboutussec span>img {
+.aboutussection span>img {
     width: 20px;
 }
 
