@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Frontend Developer</title>
-    <link rel="icon" type="image/x-icon" href="assets/favicon.svg" >
+    <meta name="description" content="Bharanidharan - Frontend Developer specializing in healthcare solutions with expertise in HTML, CSS, JavaScript, Vue, React and more">
+    <title>Frontend Developer | Bharanidharan</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.svg">
     <!-- GoogleFont -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,23 +24,31 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
         integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
-        crossorigin="anonymous"></script>
+        crossorigin="anonymous" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
         integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
-        crossorigin="anonymous"></script>
+        crossorigin="anonymous" defer></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <!-- Bootstrap Cdn -->
     <!-- JS cdn -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" defer></script>
     <!-- JS cdn -->
     <link rel="stylesheet" href="styles.css" />
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
+    <!-- Inline script to update copyright year -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            document.getElementById('current-year').textContent = new Date().getFullYear();
+        });
+    </script>
 </head>
 <body>
+<!-- Skip to main content link for accessibility -->
+<a href="#main-content" class="visually-hidden-focusable">Skip to main content</a>
 <header class="pf_header">
     <nav class="navbar navbar-expand-lg navbar-light bg-light" id="home">
         <div class="container">
-            <a class="navbar-brand" href="#home"><img src="assets/fe_logo.png" /></a>
+            <a class="navbar-brand" href="#home"><img src="assets/fe_logo.png" alt="Frontend Developer Logo" loading="lazy" width="150" height="50" /></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
                 aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -67,7 +76,8 @@
     </nav>
 </header>
 
-<div class="container" id="about">
+<main id="main-content">
+<section class="container" id="about">
     <div class="row aboutussection">
 
         <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
@@ -75,18 +85,18 @@
             <h2>Bharanidharan</h2>
             <h6>(Frontend Developer)</h6>
             <p>Dedicated Frontend Developer specializing in healthcare solutions with a track record of success in
-                developing and maintaining user-friendly and Responsive Websites Web Applications. Collaborate
+                developing and maintaining user-friendly and responsive websites and web applications. Collaborate
                 effectively with cross-functional teams to ensure the seamless integration of design and
-                functionality. </p>
-            <a href="assets/Bharanidharan_Resume.pdf" class="mt-3" target="_blank">Resume <span><img
-                        src="assets/download.gif" /></span></a>
+                functionality.</p>
+            <a href="assets/Bharanidharan_Resume.pdf" class="mt-3" target="_blank" rel="noopener">Resume <span><img
+                        src="assets/download.gif" alt="Download icon" loading="lazy" width="20" height="20" /></span></a>
         </div>
         <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-            <img src="assets/fe_bg.jpg" />
+            <img src="assets/fe_bg.jpg" alt="Bharanidharan - Frontend Developer" loading="lazy" class="img-fluid" />
         </div>
     </div>
-</div>
-<div class="container skills" id="skills">
+</section>
+<section class="container skills" id="skills">
     <div class="row">
         <div class="col-lg-12 col-sm-12 col-md-12 col-xs-12">
             <h2>Skills</h2>
@@ -95,51 +105,51 @@
     <div class="row">
         <div class="col-lg-12 skillsets">
             <div>
-                <img src="assets/html_5.png" />
+                <img src="assets/html_5.png" alt="HTML5" loading="lazy" width="80" height="80" />
             </div>
             <div>
-                <img src="assets/css.png" />
+                <img src="assets/css.png" alt="CSS" loading="lazy" width="80" height="80" />
             </div>
             <div>
-                <img src="assets/jquery.png" />
+                <img src="assets/jquery.png" alt="jQuery" loading="lazy" width="80" height="80" />
             </div>
             <div>
-                <img src="assets/javascript.png" />
+                <img src="assets/javascript.png" alt="JavaScript" loading="lazy" width="80" height="80" />
             </div>
             <div>
-                <img src="assets/vue.png" />
+                <img src="assets/vue.png" alt="Vue.js" loading="lazy" width="80" height="80" />
             </div>
             <div>
-                <img src="assets/React.png" />
+                <img src="assets/React.png" alt="React" loading="lazy" width="80" height="80" />
             </div>
             <div>
-                <img src="assets/nuxtjs.png" />
+                <img src="assets/nuxtjs.png" alt="Nuxt.js" loading="lazy" width="80" height="80" />
             </div>
             <div>
-                <img src="assets/bootstrap.png" />
+                <img src="assets/bootstrap.png" alt="Bootstrap" loading="lazy" width="80" height="80" />
             </div>
             <div>
-                <img src="assets/bootstrapvue.png" />
+                <img src="assets/bootstrapvue.png" alt="Bootstrap Vue" loading="lazy" width="80" height="80" />
             </div>
             <div>
-                <img src="assets/primevue.png" />
+                <img src="assets/primevue.png" alt="PrimeVue" loading="lazy" width="80" height="80" />
             </div>
             <div>
-                <img src="assets/git.png" />
+                <img src="assets/git.png" alt="Git" loading="lazy" width="80" height="80" />
             </div>
             <div>
-                <img src="assets/github.png" />
+                <img src="assets/github.png" alt="GitHub" loading="lazy" width="80" height="80" />
             </div>
             <div>
-                <img src="assets/bitbucket.png" />
+                <img src="assets/bitbucket.png" alt="Bitbucket" loading="lazy" width="80" height="80" />
             </div>
             <div>
-                <img src="assets/sourcetree.png" />
+                <img src="assets/sourcetree.png" alt="Sourcetree" loading="lazy" width="80" height="80" />
             </div>
         </div>
     </div>
-</div>
-<div class="container projects" id="projects">
+</section>
+<section class="container projects" id="projects">
     <div class="row">
         <div class="col-lg-12 col-sm-12 col-md-12 col-xs-12">
             <h2>Projects</h2>
@@ -148,58 +158,58 @@
     <div class="row">
         <div class="col-lg-12 projectsection">
             <div class="position-relative">
-                <img src="assets/project_hms.png" />
+                <img src="assets/project_hms.png" alt="HMS Project" loading="lazy" class="img-fluid" />
                 <div class="pcard">
                     <h4>HMS</h4>
                 </div>
             </div>
             <div class="position-relative">
-                <img src="assets/project_crm.png" />
+                <img src="assets/project_crm.png" alt="CRM Project" loading="lazy" class="img-fluid" />
                 <div class="pcard">
                     <h4>CRM</h4>
                 </div>
             </div>
             <div class="position-relative">
-                <img src="assets/project_user.png" />
+                <img src="assets/project_user.png" alt="User Management Project" loading="lazy" class="img-fluid" />
                 <div class="pcard">
                     <h4>User Management</h4>
                 </div>
             </div>
             <div class="position-relative">
-                <img src="assets/project_inventory.png" />
+                <img src="assets/project_inventory.png" alt="Inventory Management Project" loading="lazy" class="img-fluid" />
                 <div class="pcard">
                     <h4>Inventory Management</h4>
                 </div>
             </div>
 
             <div class="position-relative">
-                <img src="assets/project_asset.png" />
+                <img src="assets/project_asset.png" alt="Asset Management Project" loading="lazy" class="img-fluid" />
                 <div class="pcard">
                     <h4>Asset Management</h4>
                 </div>
             </div>
             <div class="position-relative">
-                <img src="assets/project_medway.png" />
+                <img src="assets/project_medway.png" alt="Medway Hospitals Project" loading="lazy" class="img-fluid" />
                 <div class="pcard">
                     <h4>Medway Hospitals</h4>
                 </div>
             </div>
             <div class="position-relative">
-                <img src="assets/project_transtan.png" />
+                <img src="assets/project_transtan.png" alt="Transtan Project" loading="lazy" class="img-fluid" />
                 <div class="pcard">
                     <h4>Transtan</h4>
                 </div>
             </div>
             <div class="position-relative">
-                <img src="assets/project_mocero.png" />
+                <img src="assets/project_mocero.png" alt="Mocero Health Solutions Project" loading="lazy" class="img-fluid" />
                 <div class="pcard">
                     <h4>Mocero Health Solutions</h4>
                 </div>
             </div>
         </div>
     </div>
-</div>
-<div class="container contactus" id="contact">
+</section>
+<section class="container contactus" id="contact">
     <div class="row">
         <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
             <div class="contactcard">
@@ -219,32 +229,49 @@
         </div>
         <div class="col-lg-6 col-sm-12 col-md-12 col-xs-12 getclass">
             <div class="getintouch clearfix">
-                <h4>Contact Us</h4>
+                <h4>Contact Me</h4>
                 <form action="https://formsubmit.co/bharanidharanrajalingam@gmail.com" method="POST">
-                    <input type="text" class="form-control mb-3" name="Name" placeholder="User Name" required>
-                    <input type="email" class="form-control mb-3" name="Mail" placeholder="Email" required>
-                    <textarea class="form-control mb-3" name="Message" rows="2" placeholder="Message"></textarea>
-                    <button type="submit" class="btn btn-primary float-end">Submit</button>
+                    <div class="mb-3">
+                        <label for="name" class="form-label visually-hidden">Name</label>
+                        <input type="text" class="form-control" id="name" name="Name" placeholder="Your Name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label visually-hidden">Email</label>
+                        <input type="email" class="form-control" id="email" name="Mail" placeholder="Your Email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label visually-hidden">Message</label>
+                        <textarea class="form-control" id="message" name="Message" rows="3" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary float-end">Send Message</button>
                 </form>
             </div>
         </div>
     </div>
-</div>
-<section>
-    <i class="bi bi-arrow-up-circle-fill" id="scroll-top" style="display: none;"></i>
 </section>
+<div class="back-to-top">
+    <i class="bi bi-arrow-up-circle-fill" id="scroll-top" style="display: none;" aria-hidden="true" title="Back to top"></i>
+</div>
+</main>
 <footer class="footer">
-    <div>
-        <a href="https://www.instagram.com/_b_dharan_i_?igsh=ODVrdWM2M3pzN3Ny" target="_blank"><i
-                class="bi bi-instagram"></i></a>
+    <div class="social-links">
+        <a href="https://www.instagram.com/_b_dharan_i_?igsh=ODVrdWM2M3pzN3Ny" target="_blank" rel="noopener" aria-label="Instagram Profile">
+            <i class="bi bi-instagram" aria-hidden="true"></i>
+        </a>
 
-        <a href="mailto:bharani@gmail.com" target="_blank"><i class="bi bi-envelope-open"></i></a>
+        <a href="mailto:bharanidharanrajalingam@gmail.com" aria-label="Email Me">
+            <i class="bi bi-envelope-open" aria-hidden="true"></i>
+        </a>
 
-        <a href="https://www.linkedin.com/in/bharanidharan-rajalingam-aa0689158" target="_blank"><i
-                class="bi bi-linkedin"></i></a>
+        <a href="https://www.linkedin.com/in/bharanidharan-rajalingam-aa0689158" target="_blank" rel="noopener" aria-label="LinkedIn Profile">
+            <i class="bi bi-linkedin" aria-hidden="true"></i>
+        </a>
 
-        <a href="https://github.com/BharanidharanRajalingam" target="_blank"><i class="bi bi-github"></i></a>
+        <a href="https://github.com/BharanidharanRajalingam" target="_blank" rel="noopener" aria-label="GitHub Profile">
+            <i class="bi bi-github" aria-hidden="true"></i>
+        </a>
     </div>
+    <p class="copyright">&copy; <span id="current-year">2024</span> Bharanidharan Rajalingam. All rights reserved.</p>
 </footer>
 </body>
 

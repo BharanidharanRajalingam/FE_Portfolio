@@ -354,27 +354,113 @@ p {
 }
 
 /* Contact Us */
+
+/* Accessibility */
+.visually-hidden-focusable:not(:focus):not(:focus-within) {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    clip: rect(0, 0, 0, 0) !important;
+    white-space: nowrap !important;
+    border: 0 !important;
+}
+
+.visually-hidden-focusable:focus {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1050;
+    width: auto;
+    height: auto;
+    padding: 10px 20px;
+    margin: 0;
+    background-color: #fff;
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    border: 2px solid #65cccd;
+    border-radius: 0 0 5px 0;
+}
+
+/* Copy email tooltip */
+.copy-tooltip {
+    position: absolute;
+    background-color: #333;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 14px;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    opacity: 0;
+    animation: fadeInOut 2s ease-in-out forwards;
+}
+
+@keyframes fadeInOut {
+    0% { opacity: 0; }
+    20% { opacity: 1; }
+    80% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+#emailContainer {
+    position: relative;
+    cursor: pointer;
+}
+
+#emailText:hover {
+    color: #65cccd;
+}
+
 /* Footer */
 .footer {
     background-color: #b3edfd;
     font-size: 20px;
-    padding: 10px 15px;
+    padding: 15px;
+    text-align: center;
 }
 
-.footer div a:hover .bi {
+.footer .social-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 10px;
+}
+
+.footer .social-links a {
+    color: inherit;
+    transition: transform 0.3s ease;
+    display: inline-block;
+}
+
+.footer .social-links a:hover {
+    transform: scale(1.2);
+}
+
+.footer .social-links a:hover .bi {
     color: #B55755;
 }
 
-.footer div {
-    display: flex;
-    align-items: center;
-    justify-content: end;
-    gap: 20px;
+.footer .copyright {
+    font-size: 14px;
+    color: #444;
+    margin: 0;
 }
 
 /* Footer */
 
 /* Scroll To Top */
+.back-to-top {
+    position: fixed;
+    z-index: 99;
+}
+
 #scroll-top {
     position: fixed;
     bottom: 45px;
@@ -382,12 +468,39 @@ p {
     font-size: 34px;
     cursor: pointer;
     color: #65cccd;
+    transition: all 0.3s ease;
+    opacity: 0.8;
 }
 
 #scroll-top:hover {
-    transition: 0.3s;
     color: #B55755;
-    box-shadow: 0 0 20px 4px #fff;
+    opacity: 1;
+    transform: scale(1.1);
 }
 
-/* Scroll To Top */
+/* Responsive improvements */
+@media (max-width: 768px) {
+    .pf_header .navbar-expand-lg .navbar-nav .nav-link {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    
+    .skills h2, .projects h2 {
+        font-size: 36px;
+    }
+    
+    .skillsets > div {
+        width: 120px;
+        height: 80px;
+    }
+}
+
+@media (max-width: 576px) {
+    .aboutussection {
+        margin: 10% 0;
+    }
+    
+    .contactcard, .getintouch {
+        padding: 15px;
+    }
+}
